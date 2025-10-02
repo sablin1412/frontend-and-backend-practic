@@ -1,52 +1,96 @@
 <!DOCTYPE html>
-<html lamg = "ru">
- <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Семестровая работа</title>
-    <link rel="stylesheet" href="style/style.css" />
- </head>
- <body>
-    <header>Хеадер</header>
-    <nav>
-        <ul>
-            <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
-            <li class="nav-item"><a href="pages/news.html" class="nav-link">Новости</a></li>
-            <li class="nav-item"><a href="pages/practices.html" class="nav-link">Практики</a></li>
-            <li class="nav-item"><a href="pages/goods.html" class="nav-link">Товары</a></li>
-            <li class="nav-item"><a href="pages/contacts.html" class="nav-link">Контакты</a></li>
-        </ul>
-    </nav>
-    <main>
-        <p>Информация об авторе</p>
-        <img src="imeges/mongolz.png" alt="Фото автора" width="200"
-        height="250">
-        <p>Саблин Иван Петрович</p>
-        <p>ЭФБО-12-24</p>
-        <p>Обо мне: Я родился в Москве в 70-м на краю города. Глупость рано
-        ударила в голову. В четыре активно ругался.
-        Потом школа, форма, драки, клей. Так я становился сильней. Воровал деньги в
-        раздевалке.</p>
-        <div>Навык 1</div>
-        <div>Навык 2</div>
-        <div>Навык 3</div>
-        <div>Навык 4</div>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="page-container">
+        <!-- Хедер -->
+        <header class="header">
+            <h1>Хэдер</h1>
+        </header>
 
-        <div>
-            Мой опыт работы:
-            <div>
-            Опыт 1<br>
-            Работал фантазёром. Сочинял и праздновал.
+        <!-- Навигация -->
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
+                <li class="nav-item"><a href="pages/news.html" class="nav-link">Новости</a></li>
+                <li class="nav-item"><a href="pages/practices.html" class="nav-link">Практики</a></li>
+                <li class="nav-item"><a href="pages/goods.html" class="nav-link">Товары</a></li>
+                <li class="nav-item"><a href="pages/contacts.html" class="nav-link">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <!-- Основной контент -->
+        <main class="content">
+            <!-- Заголовок профиля -->
+            <div class="profile-header">
+                <h2 class="profile-title">Информация об авторе</h2>
+           <div class="photo-center">
+                <img src="imeges/mongolz.png" alt="Фото автора" class="profile-photo">
             </div>
-            <div>
-            Опыт 2<br>
-            Работал воровством. Воровал и продавал.
+            <!-- Основная информация -->
+            <div class="basic-info">
+                <h2 class="profile-name">Саблин Иван Петрович</h2>
+                <div class="profile-group">ЭФБО-12-24</div>
             </div>
-            <div>
-            Опыт 3<br>
-            Работал рэпером. Читал и пел.
-        </div>
-    </main>
-    <footer>Футер</footer>
- </body>
+
+            <!-- Разделитель -->
+            <div class="divider"></div>
+
+            <!-- Обо мне -->
+            <section class="about-me">
+                <h3 class="experience-title">Обо мне</h3>
+                <p>Обо мне: Учусь программировать методом научного тыка и тщательного гугления. Уже знаю, что главный навык разработчика - это умение грамотно формулировать запросы в поисковике. Остальному пока учусь!</p>
+            </section>
+
+            <!-- Разделитель -->
+            <div class="divider"></div>
+
+            <!-- Навыки -->
+            <div class="experience-section">
+                <h2 class="section-title">Мои навыки</h2>
+                <div class="skills-container">
+                    <div class="skill-tag">Python</div>
+                    <div class="skill-tag">JavaScript</div>
+                    <div class="skill-tag">C#</div>
+                    <div class="skill-tag">C++</div>
+                </div>
+            </div>
+
+            <!-- Разделитель -->
+            <div class="divider"></div>
+
+            <!-- Опыт работы -->
+            <section class="experience-section">
+                <h3 class="section-title">Мой опыт работы</h3>
+                
+                <div class="experience-card">
+                    <h4 class="experience-title">Мастер перезагрузки</h4>
+                    <p class="experience-desc">Успешно перезагружал IDE 100+ раз в день. Достиг просветления в искусстве "попробовать выключить и включить"!"</p>
+                </div>
+
+                <div class="experience-card">
+                    <h4 class="experience-title">Архитектор Hello World</h4>
+                    <p class="experience-desc">Спроектировал и реализовал 15+ вариаций "Hello World" на разных языках. Специализация - кастомизация приветственных сообщений!"</p>
+                </div>
+
+                <div class="experience-card">
+                    <h4 class="experience-title">Главный по кофе-брейкам</h4>
+                    <p class="experience-desc">Оптимизировал процесс приготовления кофе под нужды программиста. Результат: +50% к концентрации, -30% к сну!"</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Футер -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; Футер</p>
+            </div>
+        </footer>
+    </div>
+</body>
 </html>

@@ -2,31 +2,79 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Новости</title>
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
-    <div>Хэдер</div>
-   <ul>
-        <li><a href="../index.html">Главная</a></li>
-        <li><a href="news.html">Новости</a></li>
-        <li><a href="practices.html">Практики</a></li>
-        <li><a href="goods.html">Товары</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-    </ul>
-    
-    <h1>Новость 1</h1>
-    <b>01.01.2025 12:00 РУ: Астафьев</b>
-    <p>Текст новости 1. Бла-бла</p>
-    
-    <h1>Новость 2</h1>
-    <b>01.01.2025 12:00 РУ: Остахов</b>
-    <p>Текст новости 2. Бла-бла</p>
-    
-    <h1>Новость 3</h1>
-    <b>01.01.2025 12:00 РУ: Егоров</b>
-    <p>Текст новости 3. Бла-бла</p>
-    
-    <div>Футер</div>
+    <div class="page-container">
+        <!-- Хедер -->
+        <header class="header">
+            <h1>Новости</h1>
+        </header>
+
+        <!-- Навигация -->
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="../index.html" class="nav-link">Главная</a></li>
+                <li class="nav-item"><a href="news.html" class="nav-link">Новости</a></li>
+                <li class="nav-item"><a href="practices.html" class="nav-link">Практики</a></li>
+                <li class="nav-item"><a href="goods.html" class="nav-link">Товары</a></li>
+                <li class="nav-item"><a href="contacts.html" class="nav-link">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <!-- Основной контент -->
+        <main class="content">
+            <!-- Заголовок -->
+            <div class="profile-header">
+                <h2 class="profile-title">Последние новости</h2>
+            </div>
+
+            <!-- Новость 1 -->
+            <div class="experience-card">
+                <h3 class="experience-title">FaZe перевели Rain на скамейку запасных</h3>
+                <div style="color: #7f8c8d; margin-bottom: 15px; font-size: 14px;">
+                    29.09.2025 17:04 | <strong>Автор: NEWS FAZE CLAN</strong>
+                </div>
+                <p class="experience-desc">Норвежский стрелок был исключен из списка после почти десяти лет.</p>
+                <div style="text-align: right; margin-top: 15px;">
+                    <span style="color: #667eea; font-weight: 600;">Читать далее...</span>
+                </div>
+            </div>
+
+            <!-- Новость 2 -->
+            <div class="experience-card">
+                <h3 class="experience-title">Удачный дебют молодого бойца Армении...</h3>
+                <div style="color: #7f8c8d; margin-bottom: 15px; font-size: 14px;">
+                    01.10.2025 11:11 | <strong>Автор: UFC</strong>
+                </div>
+                <p class="experience-desc">Молодой талант из Армении одержал победу в своем первом претендетском бою за титул в тяжелом весе. Боец Овсеп Узунян сокрушил своего оппонента точным ударом в правый глаз спустя 13.6 секунд от начала боя. Теперь новоиспеченнному бойцу придется сразиться за титул в главном бою вечера против Макгрегора.</p>
+                <div style="text-align: right; margin-top: 15px;">
+                    <span style="color: #667eea; font-weight: 600;">Читать далее...</span>
+                </div>
+            </div>
+
+            <!-- Новость 2 -->
+            <div class="experience-card">
+                <h3 class="experience-title">G2 advance to EPL S22 Stage 2 over ENCE</h3>
+                <div style="color: #7f8c8d; margin-bottom: 15px; font-size: 14px;">
+                    02.10.2025 16:30 | <strong>Автор: NEWS G2</strong>
+                </div>
+                <p class="experience-desc">The squad led by huNter- secured their qualification with a 2-0 victory in the decider series.</p>
+                <div style="text-align: right; margin-top: 15px;">
+                    <span style="color: #667eea; font-weight: 600;">Читать далее...</span>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- Футер -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2024 Новостной портал. Все права защищены.</p>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
