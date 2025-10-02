@@ -2,31 +2,88 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Товары</title>
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
-    Хэдер
-    <ul>
-        <li><a href="../index.html">Главная</a></li>
-        <li><a href="news.html">Новости</a></li>
-        <li><a href="practices.html">Практики</a></li>
-        <li><a href="goods.html">Товары</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-    </ul>
+    <div class="page-container">
+        <!-- Хедер -->
+        <header class="header">
+            <h1>Каталог товаров</h1>
+        </header>
 
-    <img src="../imeges/product1.png" alt="Товар 1" width="200">
-    <div>Товар 1</div>
-    <div>Цена товара 1</div>
+        <!-- Навигация -->
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="../index.html" class="nav-link">Главная</a></li>
+                <li class="nav-item"><a href="news.html" class="nav-link">Новости</a></li>
+                <li class="nav-item"><a href="practices.html" class="nav-link">Практики</a></li>
+                <li class="nav-item"><a href="goods.html" class="nav-link">Товары</a></li>
+                <li class="nav-item"><a href="contacts.html" class="nav-link">Контакты</a></li>
+            </ul>
+        </nav>
 
-    <img src="../imeges/product2.png" alt="Товар 2" width="200">
-    <div>Товар 2</div>
-    <div>Цена товара 2</div>
+        <!-- Основной контент -->
+        <main class="content">
+            <!-- Заголовок -->
+            <div class="profile-header">
+                <h2 class="profile-title">Каталог товаров</h2>
+                <p class="catalog-description">Мы предлагаем широкий ассортимент качественных товаров по доступным ценам</p>
+            </div>
 
-    <img src="../imeges/product3.png" alt="Товар 3" width="200">
-    <div>Товар 3</div>
-    <div>Цена товара 3</div>
+            <!-- Разделитель -->
+            <div class="divider"></div>
 
-    Футер
+            <!-- Товары -->
+            <div class="products-container">
+                <!-- Товар 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../imeges/product4.png" alt="Производительный ноутбук" class="product-img">
+                    </div>
+                    <div class="product-header">
+                        <h3 class="product-title">Джерси G2</h3>
+                        <div class="product-price">999 ₽</div>
+                    </div>
+                    <p class="product-description">Стильная джерси твоей любимой киберспортивной команды</p>
+                    <button class="buy-btn">В корзину</button>
+                </div>
+
+                <!-- Товар 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../imeges/product2.png" alt="Флагманский смартфон" class="product-img">
+                    </div>
+                    <div class="product-header">
+                        <h3 class="product-title">Джерси G2</h3>
+                        <div class="product-price">1000 ₽</div>
+                    </div>
+                    <p class="product-description">Стильная джерси твоей любимой киберспортивной команды</p>
+                    <button class="buy-btn">В корзину</button>
+                </div>
+
+                <!-- Товар 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../imeges/product3.png" alt="Беспроводные наушники" class="product-img">
+                    </div>
+                    <div class="product-header">
+                        <h3 class="product-title">Джерси G2</h3>
+                        <div class="product-price">1001 ₽</div>
+                    </div>
+                    <p class="product-description">Стильная джерси твоей любимой киберспортивной команды</p>
+                    <button class="buy-btn">В корзину</button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Футер -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2025 Интернет-магазин. Все права защищены.</p>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
