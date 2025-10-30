@@ -3,98 +3,235 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио</title>
+    <title>Главная - Портфолио</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/theme.css">
 </head>
-<body>
-    <div class="page-container">
-        <!-- Хедер -->
-        <header class="header">
-            <h1>Хэдер</h1>
-            
-            <!-- Навигация -->
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
-                    <li class="nav-item"><a href="pages/news.html" class="nav-link">Новости</a></li>
-                    <li class="nav-item"><a href="pages/practices.html" class="nav-link">Практики</a></li>
-                    <li class="nav-item"><a href="pages/goods.html" class="nav-link">Товары</a></li>
-                    <li class="nav-item"><a href="pages/contacts.html" class="nav-link">Контакты</a></li>
-                </ul>
-            </nav>
+<body class="bg-light">
+    <div class="container-fluid p-0">
+        <header class="header bg-primary text-white py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <h1 class="header__title h3 mb-1">Портфолио Студента</h1>
+                    </div>
+                </div>
+            </div>
         </header>
 
-        <!-- Основной контент -->
-        <main class="content">
-            <!-- Заголовок профиля -->
-            <article class="profile-header">
-                <h2 class="profile-title">Информация об авторе</h2>
-                <div class="photo-center">
-                    <img src="imeges/mongolz.png" alt="Фото автора" class="profile-photo">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html"><i class="bi bi-house me-1"></i>Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/news.html"><i class="bi bi-newspaper me-1"></i>Новости</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/practices.html"><i class="bi bi-code-slash me-1"></i>Практики</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/goods.html"><i class="bi bi-cart me-1"></i>Товары</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/contacts.html"><i class="bi bi-telephone me-1"></i>Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <button class="theme-toggle" id="themeToggle">
+                            <span class="theme-toggle__slider">
+                                <i class="bi bi-sun-fill theme-toggle__icon"></i>
+                            </span>
+                        </button>
+                    </div>
                 </div>
-                
-                <!-- Основная информация -->
-                <div class="basic-info">
-                    <h2 class="profile-name">Саблин Иван Петрович</h2>
-                    <p class="profile-group">ЭФБО-12-24</p>
-                </div>
-            </article>
+            </div>
+        </nav>
 
-            <!-- Разделитель -->
-            <div class="divider"></div>
+        <main class="container my-4">
+            <section class="profile mb-5">
+                <div class="card shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="row align-items-center">
+                           <div class="col-md-3 text-center mb-3 mb-md-0">
+                                <div class="profile__photo-wrapper">
+                                        <img src="imeges/mongolz.png" alt="Саблин Иван Петрович">
+                                    </div>
+                                </div>
 
-            <!-- Обо мне -->
-            <section class="about-me">
-                <h2>Обо мне</h2>
-                <p>Обо мне: Учусь программировать методом научного тыка и тщательного гугления. Уже знаю, что главный навык разработчика - это умение грамотно формулировать запросы в поисковике. Остальному пока учусь!</p>
-            </section>
-
-            <!-- Разделитель -->
-            <div class="divider"></div>
-
-            <!-- Навыки -->
-            <section class="skills-container">
-                <h2>Мои навыки</h2>
-                <div class="skills-grid">
-                    <div class="skill-tag">Python</div>
-                    <div class="skill-tag">JavaScript</div>
-                    <div class="skill-tag">C#</div>
-                    <div class="skill-tag">C++</div>
-                </div>
-            </section>
-
-            <!-- Разделитель -->
-            <div class="divider"></div>
-
-            <!-- Опыт работы -->
-            <section class="experience-section">
-                <h2 class="section-title">Мой опыт работы</h2>
-                
-                <div class="experience-grid">
-                    <article class="experience-card">
-                        <h3 class="experience-title">Мастер перезагрузки</h3>
-                        <p class="experience-desc">Успешно перезагружал IDE 100+ раз в день. Достиг просветления в искусстве "попробовать выключить и включить"!"</p>
-                    </article>
-
-                    <article class="experience-card">
-                        <h3 class="experience-title">Архитектор Hello World</h3>
-                        <p class="experience-desc">Спроектировал и реализовал 15+ вариаций "Hello World" на разных языках. Специализация - кастомизация приветственных сообщений!"</p>
-                    </article>
-
-                    <article class="experience-card">
-                        <h3 class="experience-title">Главный по кофе-брейкам</h3>
-                        <p class="experience-desc">Оптимизировал процесс приготовления кофе под нужды программиста. Результат: +50% к концентрации, -30% к сну!"</p>
-                    </article>
+                            <div class="col-md-9">
+                                <h2 class="profile__name card-title h4 text-primary">Саблин Иван Петрович</h2>
+                                <p class="profile__group card-text text-muted mb-2">
+                                    Студент группы ЭФБО-12-24
+                                </p>
+                                <div class="d-flex gap-2 flex-wrap">
+                                    <span class="badge bg-primary">HTML/CSS</span>
+                                    <span class="badge bg-success">JavaScript</span>
+                                    <span class="badge bg-info">C#</span>
+                                    <span class="badge bg-warning">C++</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
-        </main>
 
-        <!-- Футер -->
-        <footer class="footer">
-            <div class="footer-content">
-                <p>&copy; 2024 Все права защищены</p>
+            <section class="about mb-5">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-light">
+                        <h3 class="about__title card-title h5 mb-0">
+                            Обо мне
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="about__text card-text">
+                            Учусь программировать методом научного тыка и тщательного гугления. 
+                            Уже знаю, что главный навык разработчика - это умение грамотно формулировать запросы в поисковике.
+                        </p>
+                        <p class="card-text">
+                            Остальному пока учусь! Интересуюсь веб-разработкой, изучаю HTML, CSS, JavaScript и C++.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="experience mb-5">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-light">
+                        <h3 class="experience__title card-title h5 mb-0">Мой опыт
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="experience__list">
+                            <div class="experience__item mb-4">
+                                <h4 class="experience__item-title h6 text-primary">Мастер перезагрузки IDE</h4>
+                                <p class="experience__item-text">
+                                    Успешно перезагружал IDE 100+ раз в день. 
+                                    Достиг просветления в искусстве "попробовать выключить и включить"!
+                                </p>
+                            </div>
+                            <div class="experience__item mb-4">
+                                <h4 class="experience__item-title h6 text-primary">Специалист по Hello World</h4>
+                                <p class="experience__item-text">
+                                    Спроектировал и реализовал 15+ вариаций "Hello World" на разных языках. 
+                                    Специализация - кастомизация приветственных сообщений!
+                                </p>
+                            </div>
+                            <div class="experience__item">
+                                <h4 class="experience__item-title h6 text-primary">Эксперт по кофе</h4>
+                                <p class="experience__item-text">
+                                    Оптимизировал процесс приготовления кофе под нужды программиста. 
+                                    Результат: +50% к концентрации, -30% к сну!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="skills mb-5">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-light">
+                        <h3 class="skills__title card-title h5 mb-0">Мои навыки
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="skill-item d-flex align-items-center p-3 border rounded">
+                                    <i class="bi bi-filetype-html text-primary me-3" style="font-size: 2rem;"></i>
+                                    <div>
+                                        <h5 class="mb-0">HTML/CSS</h5>
+                                        <small class="text-muted">Верстка и стилизация</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="skill-item d-flex align-items-center p-3 border rounded">
+                                    <i class="bi bi-filetype-js text-warning me-3" style="font-size: 2rem;"></i>
+                                    <div>
+                                        <h5 class="mb-0">JavaScript</h5>
+                                        <small class="text-muted">Программирование</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="skill-item d-flex align-items-center p-3 border rounded">
+                                    <i class="bi bi-code-square text-info me-3" style="font-size: 2rem;"></i>
+                                    <div>
+                                        <h5 class="mb-0">C++</h5>
+                                        <small class="text-muted">Системное программирование</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="skill-item d-flex align-items-center p-3 border rounded">
+                                    <i class="bi bi-database text-success me-3" style="font-size: 2rem;"></i>
+                                    <div>
+                                        <h5 class="mb-0">SQL</h5>
+                                        <small class="text-muted">Базы данных</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        <footer class="footer bg-dark text-white py-4 mt-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="footer__text mb-0">&copy; 2025 Портфолио студента. Все права защищены.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <a href="pages/contacts.html" class="footer__link text-white text-decoration-none me-3">Контакты</a>
+                    </div>
+                </div>
             </div>
         </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        })();
+
+        window.addEventListener('DOMContentLoaded', function() {
+            const themeToggle = document.getElementById('themeToggle');
+            const themeIcon = document.querySelector('.theme-toggle__icon');
+            
+            function updateIcon(theme) {
+                if (themeIcon) {
+                    themeIcon.className = theme === 'dark' ? 'bi bi-moon-fill theme-toggle__icon' : 'bi bi-sun-fill theme-toggle__icon';
+                }
+            }
+            
+            updateIcon(localStorage.getItem('theme') || 'light');
+            
+            if (themeToggle) {
+                themeToggle.addEventListener('click', function() {
+                    const current = document.documentElement.getAttribute('data-theme');
+                    const newTheme = current === 'dark' ? 'light' : 'dark';
+                    document.documentElement.setAttribute('data-theme', newTheme);
+                    localStorage.setItem('theme', newTheme);
+                    updateIcon(newTheme);
+                });
+            }
+        });
+    </script>
 </body>
 </html>
