@@ -3,129 +3,243 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Контакты</title>
+    <title>Контакты - Портфолио</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/theme.css">
 </head>
-<body>
-    <div class="page-container">
-        <!-- Хедер -->
-        <header class="header">
-            <h1>Контакты</h1>
+<body class="bg-light">
+    <div class="container-fluid p-0">
+        <header class="header bg-primary text-white py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <h1 class="header__title h3 mb-1">Портфолио Студента</h1>
+                    </div>
+                </div>
+            </div>
         </header>
 
-        <!-- Навигация -->
-        <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-item"><a href="../index.html" class="nav-link">Главная</a></li>
-                <li class="nav-item"><a href="news.html" class="nav-link">Новости</a></li>
-                <li class="nav-item"><a href="practices.html" class="nav-link">Практики</a></li>
-                <li class="nav-item"><a href="goods.html" class="nav-link">Товары</a></li>
-                <li class="nav-item"><a href="contacts.html" class="nav-link">Контакты</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html"><i class="bi bi-house me-1"></i>Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html"><i class="bi bi-newspaper me-1"></i>Новости</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="practices.html"><i class="bi bi-code-slash me-1"></i>Практики</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="goods.html"><i class="bi bi-cart me-1"></i>Товары</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contacts.html"><i class="bi bi-telephone me-1"></i>Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <button class="theme-toggle" id="themeToggle">
+                            <span class="theme-toggle__slider">
+                                <i class="bi bi-sun-fill theme-toggle__icon"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </nav>
 
-        <!-- Основной контент -->
-        <main class="content">
-            <!-- Заголовок -->
-            <div class="profile-header">
-                <h2 class="profile-title">Наши контакты</h2>
-            </div>
+        <main class="container my-4">
+            <section class="contacts">
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-header bg-light">
+                                <h2 class="contacts__title card-title h4 mb-0">
+                                    Контактная информация
+                                </h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="contacts__info">
+                                    <div class="contacts__item mb-4">
+                                        <h3 class="h6 text-primary mb-2">
+                                        Email
+                                        </h3>
+                                        <p class="mb-0">
+                                        ivansablin90@gmail.com</a>
+                                        </p>
+                                    </div>
 
-            <!-- Контактная информация -->
-            <div class="contacts-container">
-                <!-- Электронная почта -->
-                <div class="contact-card">
-                    <div class="contact-info">
-                        <h3 class="contact-title">Электронная почта</h3>
-                        <p class="contact-detail">sablinivan-66@mail.ru</p>
+                                    <div class="contacts__item mb-4">
+                                        <h3 class="h6 text-primary mb-2">
+                                        Телефон
+                                        </h3>
+                                        <p class="mb-0">
+                                        +7 (666) 666-66-66</a>
+                                        </p>
+                                    </div>
+
+                                    <div class="contacts__item mb-4">
+                                        <h3 class="h6 text-primary mb-2">
+                                         Адрес
+                                        </h3>
+                                        <p class="mb-0">г. Москва, ул. Большая Лубянка, д. 2</p>
+                                    </div>
+
+                                    <div class="contacts__item mb-4">
+                                        <h3 class="h6 text-primary mb-2">
+                                        Социальные сети
+                                        </h3>
+                                        <div class="d-flex gap-2 flex-wrap">
+                                            <a href="#" class="btn btn-outline-primary btn-sm">
+                                            Telegram
+                                            </a>
+                                            <a href="#" class="btn btn-outline-primary btn-sm">
+                                            GitHub
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Кнопка для открытия формы -->
+                                    <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#contactModal">
+                                    Напишите мне
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Физический адрес -->
-                <div class="contact-card">
-                    <div class="contact-info">
-                        <h3 class="contact-title">Физический адрес</h3>
-                        <p class="contact-detail">г. Москва, ул. Пушкина, д. Колотушкина</p>
-                    </div>
-                </div>
-
-                <!-- Телефон -->
-                <div class="contact-card">
-                    <div class="contact-info">
-                        <h3 class="contact-title">Телефон</h3>
-                        <p class="contact-detail">+7 (666)-666-66-66 </p>
-                    </div>
-                </div>
-
-                <!-- Время работы -->
-                <div class="contact-card">
-                    <div class="contact-info">
-                        <h3 class="contact-title">Время работы</h3>
-                        <p class="contact-detail">Пн-Пт: 9:00-18:00</p>
-                    </div>
-                </div>
-
-                <!-- Социальные сети -->
-                <div class="contact-card">
-                    <div class="contact-info">
-                        <h3 class="contact-title">Социальные сети</h3>
-                        <div class="social-links">
-                            <span class="social-tag">VK</span>
-                            <span class="social-tag">Telegram</span>
-                            <span class="social-tag">WhatsApp</span>
+                    <div class="col-lg-6 mb-4">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-header bg-light">
+                                <h2 class="card-title h4 mb-0">
+                                    Часы работы
+                                </h2>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush mb-4">
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <span>Понедельник - Пятница:</span>
+                                        <strong>9:00 - 18:00</strong>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <span>Суббота:</span>
+                                        <strong>10:00 - 16:00</strong>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <span>Воскресенье:</span>
+                                        <strong>Выходной</strong>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Разделитель -->
-            <div class="divider"></div>
-
-                            <!-- Кнопка для открытия окна -->
-                <button onclick="document.getElementById('feedback-modal').style.display='block';" class="contact-button">Связаться с нами</button>
-
-                <!-- ВСПЛЫВАЮЩЕЕ ОКНО (модальное) -->
-                <div id="feedback-modal" style="display:none;position:fixed;z-index:9999;left:0;top:0;width:100vw;height:100vh;background:rgba(44,62,80,0.5);">
-                <div style="max-width:420px;margin:60px auto;background:white;border-radius:16px;padding:36px 30px 24px 30px;box-shadow:0 5px 32px rgba(44,62,80,0.32);position:relative;">
-                    <h2 class="profile-title" style="margin-top:0;font-size:22px;margin-bottom:20px;">Форма обратной связи</h2>
-                    <form>
-                    <div class="form-group">
-                        <input class="form-input" type="text" placeholder="Имя*" required>
-                    </div>
-                    <div class="form-group">
-                        <input class="form-input" type="tel" placeholder="Телефон*" required>
-                    </div>
-                    <div class="form-group">
-                        <input class="form-input" type="email" placeholder="Электронная почта*" required>
-                    </div>
-                    <div class="form-group">
-                        <select class="form-input" required>
-                        <option value="">Категория обращения*</option>
-                        <option value="Общие вопросы">Общие вопросы</option>
-                        <option value="Техническая поддержка">Техническая поддержка</option>
-                        <option value="Жалоба">Жалоба</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-textarea" placeholder="Опишите вашу проблему или вопрос..." required></textarea>
-                    </div>
-                    <div style="display:flex;justify-content:space-between;margin-top:18px;">
-                        <button type="button" onclick="document.getElementById('feedback-modal').style.display='none';" class="contact-button" style="background:linear-gradient(135deg, #e9ecef 0%, #f8f9fa 100%);color:#2c3e50;">Отмена</button>
-                        <button type="submit" class="submit-btn">Отправить</button>
-                    </div>
-                    </form>
-                </div>
-                </div>
-
-
+            </section>
         </main>
 
-        <!-- Футер -->
-        <footer class="footer">
-            <div class="footer-content">
-                <p>&copy; 2024 Все права защищены. Контактная информация</p>
+        <!-- Модальное окно с формой -->
+        <div class="modal fade" id="contactModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            Напишите мне
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Ваше имя</label>
+                                <input type="text" class="form-control" id="name" placeholder="Иван Иванов" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="example@mail.com" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Тема</label>
+                                <input type="text" class="form-control" id="subject" placeholder="Тема сообщения" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Сообщение</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Ваше сообщение..." required></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                        <button type="submit" form="contactForm" class="btn btn-primary">
+                        Отправить сообщение
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer bg-dark text-white py-4 mt-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="footer__text mb-0">&copy; 2024 Портфолио студента. Все права защищены.</p>
+                    </div>
+                </div>
             </div>
         </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        })();
+
+        window.addEventListener('DOMContentLoaded', function() {
+            const themeToggle = document.getElementById('themeToggle');
+            const themeIcon = document.querySelector('.theme-toggle__icon');
+            
+            function updateIcon(theme) {
+                if (themeIcon) {
+                    themeIcon.className = theme === 'dark' ? 'bi bi-moon-fill theme-toggle__icon' : 'bi bi-sun-fill theme-toggle__icon';
+                }
+            }
+            
+            updateIcon(localStorage.getItem('theme') || 'light');
+            
+            if (themeToggle) {
+                themeToggle.addEventListener('click', function() {
+                    const current = document.documentElement.getAttribute('data-theme');
+                    const newTheme = current === 'dark' ? 'light' : 'dark';
+                    document.documentElement.setAttribute('data-theme', newTheme);
+                    localStorage.setItem('theme', newTheme);
+                    updateIcon(newTheme);
+                });
+            }
+
+            // Обработка формы
+            const contactForm = document.getElementById('contactForm');
+            const contactModal = new bootstrap.Modal(document.getElementById('contactModal'));
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    contactModal.hide();
+                    alert('Спасибо за сообщение! Мы свяжемся с вами в ближайшее время.');
+                    contactForm.reset();
+                });
+            }
+        });
+    </script>
 </body>
 </html>
